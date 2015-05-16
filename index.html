@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
 <head> 
-		<!-- Las librerias de Quintus cargamos todas, pero solo ultilizaremos algunas por ahora -->
+	<!-- Las librerias de Quintus cargamos todas, pero solo ultilizaremos algunas por ahora -->
 	    <script src='js/quintus.js'></script>
 		<script src='js/quintus_sprites.js'></script>
 		<script src='js/quintus_scenes.js'></script>
@@ -28,7 +28,7 @@
 		 
 		// podemos tener todos los level1, level2,level3 en este caso solo level1
 		//creamos una scena llamada Level1 y cargamos el mapa diseñado en Tiled.
-		Q.scene("level1", function(stage){ 
+		Q.scene("nivel1", function(stage){ 
 			Q.stageTMX("mapa.tmx", stage); 
 			
 		}); 
@@ -37,7 +37,7 @@
 		Q.loadTMX("mapa.tmx" , function() 
 		{ 
 			//cargamos la escena que diseñamos 
-			Q.stageScene("level1"); 
+			Q.stageScene("nivel1"); 
 		}); 
 	</script> 
 
